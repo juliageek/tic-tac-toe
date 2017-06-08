@@ -1,0 +1,77 @@
+/* Styles go here */
+
+html body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html body {
+    background-color: white;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.score {
+    display: inline;
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    padding: 20px 0;
+    font-size: 50px;
+}
+.wrapper {
+    width: 315px;
+    margin:0 auto;
+    padding:50px;
+}
+.gameboard {
+    width: 315px;
+    height: 315px;
+    z-index: 1;
+    display: inline-block;
+}
+
+.cell {
+    border: 2px solid grey;
+    text-align: center;
+    font-size: 4em;
+    outline: none;
+    width: 95px;
+    height: 95px;
+    float: left;
+}
+
+.cell:nth-child(3n){
+    border-right: none;
+}
+
+.cell:nth-child(n-6){
+    border-top: none;
+}
+
+.cell:nth-child(3n+1){
+    border-left: none;
+}
+
+.cell:nth-child(n+7){
+    border-bottom: none;
+}
+
+.cell:active, .cell:focus {
+    outline: none;
+}
+
+.button {
+    background-color:transparent;
+    width: 100%;
+    margin:0 auto;
+    padding: 1em;
+    text-align: center;
+}
+
+.pick-symbol-dialogue {
+    padding: 2.5em;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app='game'>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <!-- files-->
+    <script src="app.js"></script>
+    <script src="GameController.js"></script>
+</head>
+
+<body ng-controller='GameController'>
+<h1>Tic Tac Toe</h1>
+<div class="score">YOU: </div>
+<div class="score">COMPUTER: </div>
+<div class="wrapper" ng-cloak>
+    <div class="gameboard">
+        <div class="cell" ng-repeat="cell in board" ng-click="play(cell);">{{cell.symbol}}</div>
+    </div>
+</div>
+<div class="button">
+    <button>New Game</button>
+    <button>End Game</button>
+</div>
+</body>
+</html>
