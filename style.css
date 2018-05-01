@@ -4,22 +4,21 @@ html body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-html body {
+    font-family: "Indie Flower", Helevetica, sans-serif;
     background-color: white;
-    font-family: "Roboto";
     text-align: center;
 }
 
 .score {
     display: inline;
-    padding: 15px;
+    padding: 12px;
+    font-size: 20px;
 }
 
 h1 {
     text-align: center;
     position: relative;
-    padding: 20px 0;
+    padding: 10px 0;
     font-size: 50px;
 }
 .wrapper {

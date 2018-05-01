@@ -27,27 +27,7 @@ angular
         };
 
         gameInit();
-        /*
-        human clicks cell ->
-            if human can't click cells, return
-            if cell is already filled, return
 
-            set the cell to the human symbol
-            human can't click cells anymore
-            check the board to see if human won. if so, go to end game
-            otherwise:
-                wait for an amount of time and then:
-                    do a computer move
-                    human can click cells again
-
-         computer move ->
-            computer moves somehow
-            check the board to see if computer won. if so, go to end game
-
-         check the board to see if ANYONE won ->
-            check somehow
-            do any other things, like increment win/loss count, etc
-         */
         $scope.play = function(cell) {
             if ($scope.gameObject.canHumanMove === false || cell.symbol !== ""){
                 return;

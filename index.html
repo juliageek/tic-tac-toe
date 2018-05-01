@@ -2,6 +2,7 @@
 <html ng-app='game'>
 <head>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
     <!-- files-->
     <script src="app.js"></script>
@@ -10,8 +11,9 @@
 
 <body ng-controller='GameController'>
 <h1>Tic Tac Toe</h1>
-<div class="score">YOU: </div>
-<div class="score">COMPUTER: </div>
+<div class="score">YOU: {{gameScore.human}}</div>
+<div class="score">COMPUTER: {{gameScore.computer}}</div>
+<h2>You are playing with {{gameObject.humanPlayerSymbol}}</h2>
 <div class="wrapper" ng-cloak>
     <div class="gameboard">
         <div class="cell" ng-repeat="cell in board" ng-click="play(cell);">{{cell.symbol}}</div>
